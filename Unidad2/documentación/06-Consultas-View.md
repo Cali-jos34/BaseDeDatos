@@ -1,4 +1,4 @@
-#VIEWS
+# VIEWS
 Sintaxis para crear una view
 /*create view nombreVista
 AS

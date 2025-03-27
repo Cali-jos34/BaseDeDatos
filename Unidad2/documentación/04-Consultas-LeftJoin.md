@@ -1,4 +1,4 @@
-#Inicio del tema de los Left Join
+# Inicio del tema de los Left Join
 
 ```sql
 select * from Categories

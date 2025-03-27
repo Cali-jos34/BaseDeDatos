@@ -1,4 +1,4 @@
-#Ejercicios de consultas simples NORTHWIND
+# Ejercicios de consultas simples NORTHWIND
 
 ```sql
 -- lenguaje SQL-LMD (instert, update, delete, select - crud)

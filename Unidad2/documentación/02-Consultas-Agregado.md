@@ -1,4 +1,4 @@
-#Ejercicios Agregado: Solo devuelven un solo registro sum, avg, count, count(*), max y min.
+# Ejercicios Agregado: Solo devuelven un solo registro sum, avg, count, count(*), max y min.
 
 ```sql
 --Consultas de agregado
