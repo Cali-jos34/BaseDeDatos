@@ -244,7 +244,7 @@ db.libros.find(
 -Mostrar todos aquellos libros que cuesten mas de 25 o cuya cantidad sea inferior a 15
 
 ```json
-db.libros.find({$and:[{precio:{$gt:25}}, {cantidad:{$lt:15}}]})
+db.libros.find({$or:[{precio:{$gt:25}}, {cantidad:{$lt:15}}]})
 ```
 
 
@@ -254,20 +254,8 @@ db.libros.find({$and:[{precio:{$gt:25}}, {cantidad:{$lt:15}}]})
 -Mostrar los libros de la editorial Biblia, con precio mayor a 40 o libros con la editorial Planeta con precio mayor a 30.
 
 ```json
-db.libros.find(
-{$and:[
-    {precio:$gt:40},
-    
-    {
-    editorial: 
-    {$in: ['Biblia', 'Planeta' ]}
-    },
-
-{$or:[
-    {precio:$gt:30}
-]
-]
-})
+db.libros.find
+({$and:[{precio:$gt:40},{editorial: {$in: ['Biblia', 'Planeta' ]}},{$or:[{precio:$gt:30}]]})
 ```
 ```json
 db.libros.find( 
